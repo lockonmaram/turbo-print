@@ -3,6 +3,7 @@
 	"displayName": "turbo-print",
 	"description": "Extension to print something",
 	"version": "0.0.1",
+	"publisher": "lockonmaram",
 	"engines": {
 		"vscode": "^1.63.0"
 	},
@@ -10,7 +11,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:turboPrint.Println"
+		"onCommand:turboPrint.Println",
+		"onCommand:turboPrint.MarshalIndent"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -18,8 +20,24 @@
 			{
 				"command": "turboPrint.Println",
 				"title": "Print line"
+			},
+			{
+				"command": "turboPrint.MarshalIndent",
+				"title": "Marshal indent json"
 			}
-		]
+		],
+    "keybindings": [
+      {
+        "command": "turboPrint.MarshalIndent",
+        "key": "ctrl+alt+p",
+        "mac": "ctrl+alt+p"
+      },
+      {
+        "command": "turboConsoleLog.MarshalIndent",
+        "key": "ctrl+alt+m",
+        "mac": "ctrl+alt+m"
+      }
+    ]
 	},
 	"scripts": {
 		"lint": "eslint .",

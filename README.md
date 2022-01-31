@@ -1,2 +1,2 @@
 # turbo-print
-Extension to print something in go
+Extension to print something
