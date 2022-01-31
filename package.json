@@ -33,9 +33,9 @@
         "mac": "ctrl+alt+p"
       },
       {
-        "command": "turboConsoleLog.MarshalIndent",
-        "key": "ctrl+alt+m",
-        "mac": "ctrl+alt+m"
+        "command": "turboPrint.MarshalIndent",
+        "key": "ctrl+alt+i",
+        "mac": "ctrl+alt+i"
       }
     ]
 	},
