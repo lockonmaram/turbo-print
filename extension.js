@@ -56,9 +56,9 @@ function activate(context) {
 }
 
 // this method is called when your extension is deactivated
-function deactivate() {}
+function deactivate() {};
 
 module.exports = {
 	activate,
 	deactivate
-}
+};

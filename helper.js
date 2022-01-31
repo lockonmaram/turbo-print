@@ -8,7 +8,7 @@ const constructLog = (
   const currentLine = document.lineAt(selectedTextLine).firstNonWhitespaceCharacterIndex;
   const nextLine = document.lineAt(selectedTextLine + 1).firstNonWhitespaceCharacterIndex;
 
-  const initialSpaces = `${'	'.repeat(currentLine > nextLine ? currentLine : nextLine)}`
+  const initialSpaces = `${'	'.repeat(currentLine > nextLine ? currentLine : nextLine)}`;
 
   const debuggingMsg = messages.length > 1 ?
   `${messages.map((msg) => `${initialSpaces}${msg}\n`).join('')}` :
