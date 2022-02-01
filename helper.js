@@ -13,7 +13,7 @@ const constructLog = (
   const debuggingMsg = messages.length > 1 ?
   `${messages.map((msg) => `${initialSpaces}${msg}\n`).join('')}` :
   `${initialSpaces}${messages[0]}\n`;
-  const wrappingMsg = `${initialSpaces}fmt.Println("${"-".repeat(debuggingMsg.length - 15)}")`;
+  const wrappingMsg = `${initialSpaces}fmt.Println("${"-".repeat(messages[0].length - 20)}")`;
   
   editBuilder.insert(
     new vscode.Position(

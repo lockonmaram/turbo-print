@@ -2,7 +2,7 @@
 	"name": "turbo-print",
 	"displayName": "turbo-print",
 	"description": "Extension to print something",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"publisher": "lockonmaram",
 	"engines": {
 		"vscode": "^1.63.0"
@@ -33,9 +33,9 @@
         "mac": "ctrl+alt+p"
       },
       {
-        "command": "turboPrint.MarshalIndent",
-        "key": "ctrl+alt+i",
-        "mac": "ctrl+alt+i"
+        "command": "turboConsoleLog.MarshalIndent",
+        "key": "ctrl+alt+m",
+        "mac": "ctrl+alt+m"
       }
     ]
 	},
